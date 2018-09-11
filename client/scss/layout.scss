@@ -1,0 +1,68 @@
+@import "./_normalize.scss";
+@import "./codemirror.css";
+@import "./editor.scss";
+/*$bluegrey: #2b3a42;
+*{
+    box-sizing: border-box;
+}
+body{
+}
+.CodeMirror { border: 1px solid silver; }
+.CodeMirror-empty { outline: 1px solid #c22; }
+.CodeMirror-empty.CodeMirror-focused { outline: none; }
+.CodeMirror pre.CodeMirror-placeholder { color: #999; }
+.main-container{
+    .console-container{
+        height:200px;
+        overflow-y: auto;
+    }
+    .editor-head{
+        background: #c1c1c1;
+        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .editor-input{
+        height: 300px;
+    }
+    .run-btn{
+
+    }
+    .console-container{
+        background: #000000;
+        color: #FFFFFF;
+        padding: 12px;
+        font-size: 16px;
+        p{
+            margin: 0px;
+            line-height: 20px;
+        }
+    }
+    .success-msg{
+        color:#00ca35;
+    }
+    .err-msg{
+        color: #ff0c00;
+    }
+}
+.action-bar{
+    padding: 12px 0;
+    button{
+        padding: 12px 32px;
+        font-weight: normal;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        box-shadow: none;
+        color: #FFF;
+        background-color: #0095ff;
+        border: 1px solid #07c;
+        box-shadow: inset 0 1px 0 #66bfff;
+    }
+}
+.console-head{
+    font-weight: bold;
+    padding: 12px;
+    background: #000000;
+    color: #FFFFFF;
+    border-bottom:dashed 1px #FFFFFF;
+}*/

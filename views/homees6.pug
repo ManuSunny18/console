@@ -1,0 +1,16 @@
+
+extends layout
+block content
+    header(id="mainHead" class="header-main")
+    div(class="main-container")
+        div(id="editor" class="editor-container")
+            div(id="editorHead" class="editor-head")
+                label Please Write your code below...
+                |
+            div(id="jsEditor" class="editor-box")
+        div( id="actionBar" class="action-bar")
+            button(id="runCode" class="run-btn") Run
+            |
+        div(class="console-head") Output
+        |
+        div(id="console" class="console-container")

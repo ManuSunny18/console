@@ -1,0 +1,53 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "j console",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --recursive ./test",
+    "babel-node": "babel-node --presets=env",
+    "mocha": "mocha --compilers js:babel-register",
+    "devServer": "nodemon --exec npm run babel-node server/server.js",
+    "server": "npm run babel-node server/server.js",
+    "devClient": "webpack --config webpack.dev.js --watch ",
+    "buildClient": "webpack --config webpack.prod.js",
+    "dev": "SET NODE_ENV=dev && npm-run-all --parallel devClient devServer",
+    "prod": "SET NODE_ENV=prod && npm run buildClient && npm run server "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "codemirror": "^5.40.0",
+    "express": "^4.16.3",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.9.3",
+    "path": "^0.12.7",
+    "pug": "^2.0.3",
+    "react": "^16.4.2",
+    "react-codemirror": "^1.0.0",
+    "react-codemirror2": "^5.1.0",
+    "react-dom": "^16.4.2",
+    "webpack-merge": "^4.1.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.3",
+    "nodemon-webpack-plugin": "^4.0.3",
+    "npm-run-all": "^4.1.3",
+    "regenerator-runtime": "^0.12.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.17.1",
+    "webpack-assets-manifest": "^3.0.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}

@@ -1,0 +1,75 @@
+@import "../../node_modules/codemirror/lib/codemirror.css";
+$black: #000000;
+$basePadding:12px;
+*{
+    box-sizing: border-box;
+}
+.flex-box{
+    display: flex;
+}
+html,body{
+    height: 100%;
+}
+html{
+    overflow: hidden;
+}
+body{
+    overflow-y: scroll;
+}
+.app-header{
+    background: $black;
+    padding: $basePadding*2;
+    color: #FFFFFF;
+}
+.editer-block{
+    padding-left: 50px;
+}
+.editor-box{
+    background: #ddd;
+    border: 3px solid #ccc;
+    min-height:30px;
+    width: 100%;
+}
+.code-out{
+    padding: $basePadding;
+    .icon-block{
+        width: 16px;
+    }
+    .editor-read-only{
+        color: #3f3f40;
+        width: 100%;
+    }
+
+}
+
+.icon-block{
+    width: 24px;
+    img{
+        max-width: 100%;
+        display: block;
+    }
+}
+.output-wrap{
+    padding: $basePadding;
+    background: #f1f1f1;
+    border: solid 1px #CCCCCC;
+    border-width: 1px 0px;
+    p{
+        margin: 0;
+    }
+    .code-out{
+        align-items: center;
+    }
+}
+.success-msg{
+    color:#00ca35;
+}
+.err-msg{
+    color: #ff0c00;
+}
+.history-block{
+    padding-bottom: 50px;
+}
+.react-codemirror2 {
+    width: 100%;
+}
